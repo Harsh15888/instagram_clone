@@ -1,14 +1,15 @@
-# Ignore Makefile from language stats
+# Ignore Makefile and build/vendor folders
 Makefile linguist-generated
+*.mk linguist-generated
 
-# Ignore platform and build-related files and folders
-build/** linguist-generated
-ios/** linguist-vendored
+# Ignore platform-specific folders
 android/** linguist-vendored
+ios/** linguist-vendored
 linux/** linguist-vendored
-windows/** linguist-vendored
 macos/** linguist-vendored
+windows/** linguist-vendored
+build/** linguist-generated
 web/** linguist-vendored
 
-# Force Dart files to count normally
+# Count Dart files as detectable language
 *.dart linguist-detectable
