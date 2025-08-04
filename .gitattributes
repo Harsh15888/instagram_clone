@@ -1,8 +1,10 @@
-# Ignore Makefile and similar
+# Ignore C, C headers, Makefile, and other build files
+*.c linguist-generated
+*.h linguist-generated
 Makefile linguist-generated
 *.mk linguist-generated
 
-# Ignore platform-specific and build folders
+# Ignore platform and vendor folders
 android/ linguist-vendored
 ios/ linguist-vendored
 linux/ linguist-vendored
@@ -10,6 +12,7 @@ macos/ linguist-vendored
 windows/ linguist-vendored
 build/ linguist-generated
 web/ linguist-vendored
+.dart_tool/ linguist-generated
 
-# Ensure Dart files are counted properly
+# Force Dart files to count
 *.dart linguist-detectable
