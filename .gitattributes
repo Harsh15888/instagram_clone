@@ -11,3 +11,7 @@ CMakeLists.txt linguist-vendored
 /build/** linguist-generated
 /generated/** linguist-generated
 Makefile linguist-generated
+build/** linguist-generated
+vendor/** linguist-vendored
+generated/** linguist-generated
+*.dart linguist-detectable
