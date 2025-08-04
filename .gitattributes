@@ -7,9 +7,6 @@ CMakeLists.txt linguist-vendored
 *.cpp linguist-vendored
 *.c linguist-vendored
 *.h linguist-vendored
-/vendor/** linguist-vendored
-/build/** linguist-generated
-/generated/** linguist-generated
 Makefile linguist-generated
 build/** linguist-generated
 vendor/** linguist-vendored
