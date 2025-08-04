@@ -1,14 +1,14 @@
-*.dart linguist-detectable=true
-*.dart linguist-language=Dart
-linux/* linguist-vendored
-windows/* linguist-vendored
-*.cmake linguist-vendored
-CMakeLists.txt linguist-vendored
-*.cpp linguist-vendored
-*.c linguist-vendored
-*.h linguist-vendored
+# Deprioritize Makefile and any non-Dart files
 Makefile linguist-generated
+
+# Ignore common non-Dart folders
 build/** linguist-generated
 vendor/** linguist-vendored
-generated/** linguist-generated
+ios/** linguist-vendored
+android/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+
+# Force Dart files to count
 *.dart linguist-detectable
