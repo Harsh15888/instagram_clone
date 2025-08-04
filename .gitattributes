@@ -1,14 +1,14 @@
-# Deprioritize Makefile and any non-Dart files
+# Ignore Makefile from language stats
 Makefile linguist-generated
 
-# Ignore common non-Dart folders
+# Ignore platform and build-related files and folders
 build/** linguist-generated
-vendor/** linguist-vendored
 ios/** linguist-vendored
 android/** linguist-vendored
-macos/** linguist-vendored
-windows/** linguist-vendored
 linux/** linguist-vendored
+windows/** linguist-vendored
+macos/** linguist-vendored
+web/** linguist-vendored
 
-# Force Dart files to count
+# Force Dart files to count normally
 *.dart linguist-detectable
