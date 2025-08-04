@@ -1,23 +1,25 @@
-# Ignore C/C++/Objective-C source and build files
+# Suppress native and C/C++ code from language stats
 *.c linguist-generated
 *.cpp linguist-generated
 *.cc linguist-generated
 *.h linguist-generated
 *.hpp linguist-generated
-*.mm linguist-generated
 *.m linguist-generated
+*.mm linguist-generated
 Makefile linguist-generated
 *.mk linguist-generated
 
-# Ignore build and tooling folders
-android/ linguist-vendored
-ios/ linguist-vendored
-linux/ linguist-vendored
-macos/ linguist-vendored
-windows/ linguist-vendored
-web/ linguist-vendored
-build/ linguist-generated
-.dart_tool/ linguist-generated
+# Ignore entire native/platform/vendor folders
+android/** linguist-vendored
+ios/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+web/** linguist-vendored
+build/** linguist-generated
+.dart_tool/** linguist-generated
+.idea/** linguist-generated
+packages/** linguist-vendored
 
-# Count Dart files properly
+# Tell GitHub to count Dart files
 *.dart linguist-detectable
